@@ -1,0 +1,146 @@
+body{
+  margin:0;
+  padding: 0;
+}
+
+/* Title Fade In Loading Animation */
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+/* TEXT STYLES */
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 0;
+  color: #F5F5F1;
+}
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #F5F5F1;
+}
+
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #F5F5F1;
+}
+
+.hero {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backface-visibility: hidden;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 20;
+}
+
+.header {
+  z-index: 2;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 0px;
+}
+
+.formbackground {
+	background: rgba(0, 0, 0, 0.6);
+	width: 240px;
+	height: auto;
+	padding: 10px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.formbackground a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.enjoy-css {
+  display:block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 200px;
+  height: 20px;
+  position: relative;
+  padding: 6px 20px 10px;
+  border: 1px solid #b7b7b7;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font: normal 16px/normal 'Source Sans Pro', sans-serif;
+  color: rgba(0,0,0,1);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(255,255,255,1);
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  margin: 0 auto;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  width: 240px;
+  height: 40px;
+  border: solid 2px #C72E1B;
+  background: #C72E1B;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background: #822014;
+  border: solid 2px #822014;
+  text-decoration: none;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
